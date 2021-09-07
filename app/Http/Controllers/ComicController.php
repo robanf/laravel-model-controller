@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Comic;
 
 class ComicController extends Controller
 {
@@ -14,7 +15,8 @@ class ComicController extends Controller
     }
 
     public function dettaglio($id) {
-        $fumetto=config('comics');
+        /* $fumetto=config('comics'); */
+        $fumetto= Comic::all();
     
         $data=['fum' => $fumetto[$id]];
         return view('dettaglio',$data);

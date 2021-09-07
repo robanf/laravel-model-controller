@@ -7,6 +7,7 @@
         <div class="col-6 text-center">
         <img src="{{$fum['thumb']}}" alt="{{$fum['series']}}">
             <h2>{{$fum['series']}}</h2>
+            <h5>U.S Price:{{$fum['price']}}</h5>
             <div class="py-3">{{$fum['description']}}</div>
         </div>
     </div>
