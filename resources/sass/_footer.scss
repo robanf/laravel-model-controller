@@ -1,0 +1,80 @@
+footer{
+    .shop{
+        height: 150px;
+        background-color: blue;
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100%;
+            li{
+                height: 100px;
+                width: auto;
+                display: inline-block;
+                a{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    img{
+                        height: 70%;
+                        display: inline-block;
+                        margin: 5px;
+                    }
+                    span{
+                        color: white;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+    .last-link{
+        background-image: url("../img/footer-bg.jpg");
+        display: flex;
+        justify-content: space-around;
+        height: 300px;
+        .colonne-link{
+            display: inline-block;
+            margin: 0 20px;
+            color: white;
+            ul{
+                margin: 20px;
+            }
+        }
+        .imgDC{
+            height: 300px;
+            width: 300px;
+            background-image: url("../img/dc-logo-bg.png");
+            background-size:cover ;
+        }
+    }
+    .social-media{
+        background-color: rgb(22, 22, 22);
+        height: 110px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+            border: 2px solid blue;
+        }
+        .link-social{
+                color: blue;
+                font-weight: bold;
+                ul{
+                    display: flex;
+                    align-items: center;
+                    
+                    li{
+                        display: inline-block;
+                        margin: 0 10px;
+                    }
+                }
+        }
+    }
+}
