@@ -9,16 +9,12 @@ class ComicController extends Controller
 {
     public function comics() {
         $data=[
-            'fumetti'=>config('comics')
+            'fumetti'=>Comic::all()
         ];
         return view('comics',$data);
     }
-
     public function dettaglio($id) {
-        /* $fumetto=config('comics'); */
-        $fumetto= Comic::all();
-    
-        $data=['fum' => $fumetto[$id]];
-        return view('dettaglio',$data);
+        $fumetto= Comic::find( $id );
+        return view('dettaglio', $fumetto);
     }
 }
